@@ -1,9 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generate = require('./generateMarkdown')
-const writeFileAsync = util.promisify(fs.writeFile);
+const util = require('util');
+const generateReadme = require('./utils/generateReadme');
 
-const questions = [
+
+function askUser(){
+  return inquirer.createPromptModule([
 {
     type: "input",
     name: "title",
@@ -25,6 +27,7 @@ const questions = [
     message: "Project use"
     },
 
+
     {
         type: "input",
         name: "Credits",
@@ -45,4 +48,42 @@ const questions = [
     ]
   },
 
-  ]
+  {
+    type: "input",
+    name: "tests",
+    message: "test application"
+  },
+
+  {
+    type: "input",
+    name: "questions",
+    message: "Questions?"
+  },
+
+  {
+    type: "input",
+    name: "username",
+    message: "Enter Github username:"
+  },
+
+  {
+    type: "input",
+    name: "email",
+    message: "Enter email:"
+  }
+  ]);
+}
+
+  async function init() {
+try {
+    const answers = await askUser();
+    const generateContent = generateReadme(answers);
+    await writeFilesAsync('./dist/README.md', generateContent);
+    console.log('posted to README.md');
+}   catch(error) {
+    console.log(error);
+}
+}
+ init(); 
+
+ module.exports = questions;
