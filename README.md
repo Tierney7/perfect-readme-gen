@@ -5,8 +5,7 @@
 
 -This application solves the problem of writing readme files from scratch and in turn saves the user time.
 
--Although i learned alot during this project i still have a long way to go...
-As you may have noticed it does not function properly yet and i plan on re-submitting after a tutor session this weekend 
+
 
 ## Installation
 Please use 'npm install' and 'npm install inquirer' to run the application.
@@ -16,6 +15,7 @@ Please use 'npm install' and 'npm install inquirer' to run the application.
 ![alt text](assets/images/Screenshot%20(91).png)
 
 ## credits
+worked with fellow bootcamp classmate Christian Fellwock. github: cfellwock
 
 https://youtu.be/xMoAZVIiGT0
 

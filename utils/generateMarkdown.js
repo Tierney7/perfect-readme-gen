@@ -1,11 +1,13 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-const index = require('../index.js');
 
-function renderLicense(license) {
+function renderLicenseBadge(license) {}
+function renderLicenseLink(license) {}
+function renderLicenseSection(license) {}
 
-}
+function generateMarkdown(data) {
+  return `# ${data.title}
+          # ${data.installation}
+          # ${data.usage}        
+        `
+  }
 
-function renderLicenseLink(license) {
-    
-}
+module.exports = generateMarkdown;
