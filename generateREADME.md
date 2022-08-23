@@ -27,8 +27,5 @@
     ### None
 
     ## Questions:
-    ### If you have any questions, you may contact me at either
-    ### Github: https://github.com/cfellwock
-    ### or
-    ### Email: christian.fellwock@gmail.com
+   
   
