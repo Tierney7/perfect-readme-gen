@@ -1,8 +1,7 @@
 
 const inquirer = require('inquirer')
 const fs = require('fs')
-const generateMarkDown = require('./generateREADME')
-
+const generateMarkDown = require('./utils/generateMarkdown')
 
 
 const questions = [
@@ -122,16 +121,17 @@ const questions = [
 
 
 function writeToFile(fileName, answerData) {
-      return fs.writeFile(fileName, answerData,  (err) => { 
+        return fs.writeFile(fileName, answerData,  (err) => { 
         if (err) { 
           console.log(err); 
         }})
       
 }
 
+
 function init() {
     inquirer.prompt(questions) 
-        .then(function(data){
+        .then(function(data) {
             writeToFile("generatedREADME.md", generateMarkDown(data))
         })
     .catch(error => {

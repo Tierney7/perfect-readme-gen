@@ -1,11 +1,6 @@
-function renderLicenseBadge(license) {}
-function renderLicenseLink(license) {}
-function renderLicenseSection(license) {}
 
+    # ReadME Generator
 
-function generateMarkdown(data) {
-  return `
-    # ${data.title}
     ## Table of Contents:
     ###  * [Installation](#installation)
     ###  * [Usage](#usage)
@@ -13,24 +8,27 @@ function generateMarkdown(data) {
     ###  * [Tests](#tests)
     ###  * [Licenses](#licenses)
     ###  * [Questions](#questions)
+
     ## Installation:
     ### You must install the following for this app to function:
-    ### ${data.installation}
+    ### Run NPM i to install inquirer and run the readME generator
+
     ## Usage:
-    ### ${data.usage}
+    ### Use this project to generate professional, formatted readMEs without having to make them by hand
+
     ## Contribute:
-    ### ${data.contribution}
+    ### Contribute by adding a function to search for licenses and their badges
+
     ## Tests:
     ### Run the following commands in your terminal to test this app:
-    ### ${data.test}
+    ### There is no test code. Start by writing test code.
+
     ## Licenses:
-    ### ${data.licenses}
+    ### None
+
     ## Questions:
     ### If you have any questions, you may contact me at either
-    ### Github: https://github.com/${data.username}
+    ### Github: https://github.com/cfellwock
     ### or
-    ### Email: ${data.email}
-  `;   
-} 
-
-module.exports = generateMarkdown;
+    ### Email: christian.fellwock@gmail.com
+  
