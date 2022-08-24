@@ -6,11 +6,12 @@
 -This application solves the problem of writing readme files from scratch and in turn saves the user time.
 
 
-
 ## Installation
-Please use 'npm install' and 'npm install inquirer' to run the application.
+Please use 'npm install' and 'node index.js to run the application.
 
 ## Usage 
+
+![alt text](assets/images/2022_08_24_180121.mp4)
 
 ![alt text](assets/images/Screenshot%20(91).png)
 
@@ -26,7 +27,7 @@ https://youtu.be/knK7JMwxl3M
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2022] [Matthew Tierney]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
